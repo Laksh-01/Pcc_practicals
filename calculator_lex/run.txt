@@ -1,7 +1,4 @@
-bison -d cl.y
-
-flex cal.l
-
+bison -d cl.y  ..cltab.c   ..c.tab.h -> headers
+flex cal.l  ---- .yy.c
 gcc lex.yy.c cl.tab.c -w
-
 a.exe
