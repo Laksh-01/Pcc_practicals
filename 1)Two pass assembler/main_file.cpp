@@ -224,7 +224,7 @@ void pass2() {
                 }
             } else if (control == 9) {
                 infile >> word;
-                outfile << " " << word;q
+                outfile << " " << word;
                 infile >> word;
                 outfile << " " << word;
             }
