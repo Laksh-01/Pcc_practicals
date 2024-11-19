@@ -68,7 +68,7 @@
 /* Copy the first part of user declarations.  */
 
 /* Line 189 of yacc.c  */
-#line 1 "parser.y"
+#line 1 ".\\parser.y"
 
 	#include<stdio.h>
 	int yylex(void);
@@ -2078,7 +2078,7 @@ yyreturn:
 
 
 /* Line 1675 of yacc.c  */
-#line 268 "parser.y"
+#line 268 ".\\parser.y"
 
 
 int main()

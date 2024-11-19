@@ -1,20 +1,13 @@
 global main
-extern test
+
 section data
-X dd 10,20,40,5,7,9,53,8,11,13
-sum dd 0,10
+num1 dd 5      ; First number (5)
+num2 dd 10     ; Second number (10)
+sum dd 0       ; Variable to store the result
+
 section text
-MVI I,X
-MVI B,0
-MVI C,0
-L1:         LOADI
-            ADD C
-            MOV C,A
-            INC B 
-            CMP B,10
-            JE L2
-            ADDI 4
-            JMP L1
-L2:         STORE sum
-            STOP
-     
+main:
+    MVI A, [num1]  ; Load num1 into register A
+    ADD [num2]     ; Add num2 to register A
+    MOV [sum], A   ; Store the result in sum
+    STOP           ; End the program

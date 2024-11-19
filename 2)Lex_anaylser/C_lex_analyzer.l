@@ -1,9 +1,8 @@
 %{
-int COMMENT=0;
+int COMMENT=0; 
 %}
 
 identifier [a-zA-Z][a-zA-Z0-9]*
-
 %%
 #.*\n {printf("%sThis is a PREPROCESSOR DIRECTIVE\n",yytext);}
 

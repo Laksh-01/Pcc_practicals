@@ -671,7 +671,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 7 ".\\C_lex_analyzer.l"
+#line 6 ".\\C_lex_analyzer.l"
 
 #line 677 "lex.yy.c"
 
@@ -758,89 +758,89 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 8 ".\\C_lex_analyzer.l"
+#line 7 ".\\C_lex_analyzer.l"
 {printf("%sThis is a PREPROCESSOR DIRECTIVE\n",yytext);}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 10 ".\\C_lex_analyzer.l"
+#line 9 ".\\C_lex_analyzer.l"
 {printf("\n%s is a KEYWORD",yytext);}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 12 ".\\C_lex_analyzer.l"
+#line 11 ".\\C_lex_analyzer.l"
 {COMMENT = 1;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 13 ".\\C_lex_analyzer.l"
+#line 12 ".\\C_lex_analyzer.l"
 {COMMENT = 0;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 15 ".\\C_lex_analyzer.l"
+#line 14 ".\\C_lex_analyzer.l"
 {if(!COMMENT)printf("\nFUNCTION: \n%s",yytext);}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 17 ".\\C_lex_analyzer.l"
+#line 16 ".\\C_lex_analyzer.l"
 {if(!COMMENT) printf("\n%s is an IDENTIFIER",yytext);}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 19 ".\\C_lex_analyzer.l"
+#line 18 ".\\C_lex_analyzer.l"
 {if(!COMMENT)printf("\n%s is a STRING",yytext);}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 21 ".\\C_lex_analyzer.l"
+#line 20 ".\\C_lex_analyzer.l"
 {if(!COMMENT) printf("\n%s is a NUMBER ",yytext);}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 23 ".\\C_lex_analyzer.l"
+#line 22 ".\\C_lex_analyzer.l"
 {if(!COMMENT) printf("\nBLOCK BEGINS");}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 24 ".\\C_lex_analyzer.l"
+#line 23 ".\\C_lex_analyzer.l"
 {if(!COMMENT) printf("\nBLOCK ENDS");}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 26 ".\\C_lex_analyzer.l"
+#line 25 ".\\C_lex_analyzer.l"
 {if(!COMMENT);printf("\n)");}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 27 ".\\C_lex_analyzer.l"
+#line 26 ".\\C_lex_analyzer.l"
 {if(!COMMENT) printf("\n%s is an ASSIGNMENT OPERATOR",yytext);}
 	YY_BREAK
 case 13:
-#line 30 ".\\C_lex_analyzer.l"
+#line 29 ".\\C_lex_analyzer.l"
 case 14:
-#line 31 ".\\C_lex_analyzer.l"
+#line 30 ".\\C_lex_analyzer.l"
 case 15:
-#line 32 ".\\C_lex_analyzer.l"
+#line 31 ".\\C_lex_analyzer.l"
 case 16:
-#line 33 ".\\C_lex_analyzer.l"
+#line 32 ".\\C_lex_analyzer.l"
 case 17:
-#line 34 ".\\C_lex_analyzer.l"
+#line 33 ".\\C_lex_analyzer.l"
 case 18:
 YY_RULE_SETUP
-#line 34 ".\\C_lex_analyzer.l"
+#line 33 ".\\C_lex_analyzer.l"
 {if(!COMMENT) printf("\n%s is a RELATIONAL OPERATOR",yytext);}
 	YY_BREAK
 case 19:
-#line 37 ".\\C_lex_analyzer.l"
+#line 36 ".\\C_lex_analyzer.l"
 case 20:
 YY_RULE_SETUP
-#line 37 ".\\C_lex_analyzer.l"
+#line 36 ".\\C_lex_analyzer.l"
 {if(!COMMENT) printf("\n%s is a SEPERATOR",yytext);}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 39 ".\\C_lex_analyzer.l"
+#line 38 ".\\C_lex_analyzer.l"
 ECHO;
 	YY_BREAK
 #line 847 "lex.yy.c"
@@ -1729,7 +1729,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 39 ".\\C_lex_analyzer.l"
+#line 38 ".\\C_lex_analyzer.l"
 
 int main(int argc, char **argv)
 {

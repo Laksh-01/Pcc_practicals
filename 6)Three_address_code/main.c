@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 // Label counter for TAC generation
 int labelCounter = 0;
@@ -7,13 +7,13 @@ int tempCounter = 0;
 
 // Function to generate new labels and temporary variables
 char* newLabel() {
-    static char label[10];
+    char* label = (char*)malloc(10 * sizeof(char));
     sprintf(label, "L%d", labelCounter++);
     return label;
 }
 
 char* newTemp() {
-    static char temp[10];
+    char* temp = (char*)malloc(10 * sizeof(char));
     sprintf(temp, "t%d", tempCounter++);
     return temp;
 }
@@ -25,8 +25,13 @@ void generateWhileLoop(char* condition, char* body);
 
 int main() {
     // Example usage
+    printf("TAC for assignment\n");
     generateAssignment("x", "a + b");
+
+    printf("\nTAC for if-else\n");
     generateIfElse("a < b", "x = a + b", "x = a - b");
+
+    printf("\nTAC for while-loop\n");
     generateWhileLoop("a < b", "a = a + 1");
 
     return 0;
@@ -49,6 +54,10 @@ void generateIfElse(char* condition, char* trueBlock, char* falseBlock) {
     printf("goto %s\n", L3);
     printf("%s: %s\n", L2, falseBlock);
     printf("%s:\n", L3);
+
+    free(L1);
+    free(L2);
+    free(L3);
 }
 
 // Function to generate TAC for while loops
@@ -60,4 +69,7 @@ void generateWhileLoop(char* condition, char* body) {
     printf("%s\n", body);
     printf("goto %s\n", L1);
     printf("%s:\n", L2);
+
+    free(L1);
+    free(L2);
 }

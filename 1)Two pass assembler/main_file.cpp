@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 string convert(int decimal) {
     string binary = "" ;
     for (int i = decimal; i > 0; i /= 2) {

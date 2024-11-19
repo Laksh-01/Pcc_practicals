@@ -68,7 +68,7 @@
 /* Copy the first part of user declarations.  */
 
 /* Line 189 of yacc.c  */
-#line 1 "cl.y"
+#line 1 ".\\cl.y"
 
 /* Definition section */
 #include<stdio.h>
@@ -1309,7 +1309,7 @@ yyreduce:
         case 2:
 
 /* Line 1455 of yacc.c  */
-#line 18 "cl.y"
+#line 18 ".\\cl.y"
     {
 
 		printf("\nResult=%d\n", (yyval));
@@ -1322,49 +1322,49 @@ yyreduce:
   case 3:
 
 /* Line 1455 of yacc.c  */
-#line 25 "cl.y"
+#line 25 ".\\cl.y"
     {(yyval)=(yyvsp[(1) - (3)])+(yyvsp[(3) - (3)]);;}
     break;
 
   case 4:
 
 /* Line 1455 of yacc.c  */
-#line 27 "cl.y"
+#line 27 ".\\cl.y"
     {(yyval)=(yyvsp[(1) - (3)])-(yyvsp[(3) - (3)]);;}
     break;
 
   case 5:
 
 /* Line 1455 of yacc.c  */
-#line 29 "cl.y"
+#line 29 ".\\cl.y"
     {(yyval)=(yyvsp[(1) - (3)])*(yyvsp[(3) - (3)]);;}
     break;
 
   case 6:
 
 /* Line 1455 of yacc.c  */
-#line 31 "cl.y"
+#line 31 ".\\cl.y"
     {(yyval)=(yyvsp[(1) - (3)])/(yyvsp[(3) - (3)]);;}
     break;
 
   case 7:
 
 /* Line 1455 of yacc.c  */
-#line 33 "cl.y"
+#line 33 ".\\cl.y"
     {(yyval)=(yyvsp[(1) - (3)])%(yyvsp[(3) - (3)]);;}
     break;
 
   case 8:
 
 /* Line 1455 of yacc.c  */
-#line 35 "cl.y"
+#line 35 ".\\cl.y"
     {(yyval)=(yyvsp[(2) - (3)]);;}
     break;
 
   case 9:
 
 /* Line 1455 of yacc.c  */
-#line 37 "cl.y"
+#line 37 ".\\cl.y"
     {(yyval)=(yyvsp[(1) - (1)]);;}
     break;
 
@@ -1583,7 +1583,7 @@ yyreturn:
 
 
 /* Line 1675 of yacc.c  */
-#line 41 "cl.y"
+#line 41 ".\\cl.y"
 
 
 //driver code
